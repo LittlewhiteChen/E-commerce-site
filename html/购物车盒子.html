@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Examples</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="shortcut icon" href="../image/icon/qoo10__m18.ico">
+    <link href="" rel="stylesheet">
+    <style type="text/css">
+        a:-webkit-any-link {
+color: -webkit-link;
+text-decoration: underline;
+cursor: auto;
+}
+.cart_box{float:right;margin-top:33px;position:relative;z-index:8;-webkit-backface-visibility:hidden;}
+.cart_box .cart_link{-webkit-backface-visibility:hidden;text-decoration:none;display:block;width:138px;height:32px;line-height:32px;border:1px solid #e5e5e5;position:relative;background:#fff;z-index:2;box-shadow:0 0 2px rgba(0,0,0,.2);}
+.cart_box .cart_gif{float:left;width:28px;height:28px;overflow:hidden;padding:0 9px;}
+.cart_box .text{width:86px;height:32px;line-height:32px;color:#666;overflow:hidden;float:left;padding-left:6px;background:#f8f8f8;}
+.cart_box .num{width:25px;height:28px;line-height:25px;color:#fff;position:absolute;background-position:0 -69px;top:-11px;font-family:arial;text-align:center;left:34px;padding:0;margin:0;overflow:hidden;}
+.cart_box .num,.header_icon s,.header_top_right .icon_favorite,.header_top_right .icon_koubei,.header_top_right .icon_mobile{background:url(../image/icon/header_sprites1.png) no-repeat;}
+body{font:12px/1.5 tahoma,arial,'Hiragino Sans GB','\5FAE\8F6F\96C5\9ED1',sans-serif;}
+.cart_box .icon_arrow_right{margin:4px 3px -2px 5px;position:absolute;top:11px;right:2px;overflow:hidden;width:6px;height:3px;background-position:0 0;}
+.cart_box .cart_link:after{clear:both;content:'.';overflow:hidden;height:0;visibility:hidden;}
+.cart_box .cart_content{position:absolute;top:33px;z-index:2;right:0;background:#fff;border:1px solid #e5e5e5;box-shadow:0 0 2px rgba(0,0,0,.2);}
+.cart_box .cart-icons{display:none;width:138px;height:5px;background:#fff;overflow:hidden;position:absolute;top:-5px;right:0;}
+.cart_box .cart_content_null{width:260px;text-align:center;padding:20px;color:#666;font-size:14px;display:none;_zoom:1;background:#FFF;}
+.cart_box .cart_left_time{height:37px;line-height:37px;border-bottom:solid 1px #eee;padding-left:30px;background:url(../image/icon/cart_countdown.jpg) 13px center no-repeat;white-space:nowrap;overflow:hidden;}
+.cart_box .cart_content_center{max-height:234px;overflow:auto;margin-bottom:-1px;width:300px;}
+.cart_box .con_all{padding:5px 15px;width:270px;background:#f9f9f9;overflow:hidden;position:relative;z-index:8;}
+    </style>
+</head>
+
+<body>
+    <div id="cart_box" class="cart_box">
+        <a id="cart" class="cart_link"  rel="nofollow">
+            <img src="../image/icon/cart.gif" width="28" height="28" class="cart_gif">
+            <span class="text">去购物车结算</span>
+            <span class="num" style="display: none;"></span>
+            <s class="icon_arrow_right"></s>
+        </a>
+
+
+
+
+        <div class="cart_content" id="cart_content">
+            <i class="cart-icons"></i>
+            <div class="cart_content_null" style="display: none;">购物车中还没有商品，
+                <br>快去挑选心爱的商品吧！</div>
+            <div class="cart_content_all" style="display: none;">
+                <div class="cart_left_time">已超过购物车商品保留时间，请尽快结算。</div>
+                <div class="cart_content_center"></div>
+                <div class="con_all">
+                    <div class="price_whole"><span>共<span class="num_all"></span>件商品</span>
+                    </div>
+                    <div><span class="price_gongji">共计<em>￥</em><span class="total_price">69</span></span><a href="http://cart.jumei.com/i/cart/show/?from=header_cart" class="cart_btn" rel="nofollow">去购物车结算</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style type="text/css">
+* { margin: 0; padding: 0; }
+#lifeserv,
+#news { position: absolute; right: 0; padding: 0; background: rgba(255, 255, 255, .85); filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#BBFFFFFF, endColorstr=#BBFFFFFF); font-family: consolas; font: 12px/150% Arial, Verdana, "\5b8b\4f53"; color: #666; }
+#lifeserv .mt,
+#news .mt { padding: 0 15px; border-bottom: 1px dotted #E8E8E7; height: 43px; line-height: 43px }
+#news a,
+#lifeserv a { color: #666; text-decoration: none; }
+#lifeserv h2,
+#news h2 { font-size: 16px }
+#news h2 { font-family: "microsoft yahei"; float: left; line-height: 43px; font-weight: normal; margin: 0; }
+#news .mt .extra { float: right; font-family: consolas; }
+.extra a { font-family: consolas; font: 12px/150% Arial, Verdana, "\5b8b\4f53"; color: #666; text-decoration: none; }
+#news { height: 200px; width: 248px; overflow: hidden; top: 12px; border: solid 1px #e4e4e4; border-bottom: 0 }
+#news .mc { height: 140px; padding: 8px 0 0 15px }
+#news li { width: 210px; height: 27px; line-height: 27px; overflow: hidden; list-style: none; }
+#news li span { font-weight: 700; margin-right: 5px }
+
+/* product-home/1.0.0 lifeserv.css Date:2015-03-19 19:37:12 */
+@-webkit-keyframes toRightFromLeft {
+    50% { opacity: 0; -webkit-transform: translate(-50%) }
+    51% { opacity: 1 }
+}
+@-moz-keyframes toRightFromLeft {
+    50% { opacity: 0; -moz-transform: translate(-50%) }
+    51% { opacity: 1 }
+}
+#lifeserv { top: 213px; border: solid 1px #e4e4e4; border-top: dashed 1px #e4e4e4; overflow: hidden; width: 248px }
+#lifeserv .mc { height: 208px; position: relative }
+#lifeserv ul { position: relative; width: 260px; height: 209px; overflow: hidden }
+#lifeserv .lifeserv-current li { height: 27px; border-bottom: 1px solid #E8E8E7 }
+#lifeserv li { _position: relative; float: left; display: inline; width: 62px; height: 70px; border-right: 1px solid #E8E8E7; border-bottom: 1px solid #E8E8E7; overflow: hidden; cursor: pointer }
+#lifeserv li.simple a { padding-top: 0; height: 69px }
+#lifeserv li.simple i { height: 0; line-height: 0 }
+#lifeserv li.current { border-top: 2px solid #c81623; border-bottom: none; background: #fff }
+#lifeserv li.current a { line-height: 25px }
+#lifeserv li a { display: block; width: 62px; height: 28px; padding-top: 41px; line-height: 28px; text-align: center; text-decoration: none; cursor: pointer }
+#lifeserv li a:hover span { color: #C81623 }
+#lifeserv .ci-left { top: 13px; left: 18px; width: 25px; height: 25px }
+#lifeserv .fore1 .ci-left { background: url(../image/icon/server.png) no-repeat 0 0 }
+#lifeserv .fore1 .cw-icon:hover .ci-left { background: url(../image/icon/server.png) no-repeat -25px 0 }
+#lifeserv .fore2 .ci-left { background: url(../image/icon/server.png) no-repeat 0 -25px }
+#lifeserv .fore2 .cw-icon:hover .ci-left { background: url(../image/icon/server.png) no-repeat -25px -25px }
+#lifeserv .fore3 .ci-left { background: url(../image/icon/server.png) no-repeat 0 -50px }
+#lifeserv .fore3 .cw-icon:hover .ci-left { background: url(../image/icon/server.png) no-repeat -25px -50px }
+#lifeserv .fore4 .ci-left { background: url(../image/icon/server.png) no-repeat 0 -75px }
+#lifeserv .fore4 .cw-icon:hover .ci-left { background: url(../image/icon/server.png) no-repeat -25px -75px }
+#lifeserv .fore5 .ci-left { background: url(../image/icon/server.png) no-repeat 0 -100px }
+#lifeserv .fore5 .cw-icon:hover .ci-left { background: url(../image/icon/server.png) no-repeat -25px -100px }
+#lifeserv .fore6 .ci-left { background: url(../image/icon/server.png) no-repeat 0 -125px }
+#lifeserv .fore6 .cw-icon:hover .ci-left { background: url(../image/icon/server.png) no-repeat -25px -125px }
+#lifeserv .fore7 .ci-left { background: url(../image/icon/server.png) no-repeat 0 -150px }
+#lifeserv .fore7 .cw-icon:hover .ci-left { background: url(../image/icon/server.png) no-repeat -25px -150px }
+#lifeserv .fore8 .ci-left { background: url(../image/icon/server.png) no-repeat 0 -175px }
+#lifeserv .fore8 .cw-icon:hover .ci-left { background: url(../image/icon/server.png) no-repeat -25px -175px }
+#lifeserv .fore9 .ci-left { background: url(../image/icon/server.png) no-repeat 0 -200px }
+#lifeserv .fore9 .cw-icon:hover .ci-left { background: url(../image/icon/server.png) no-repeat -25px -200px }
+#lifeserv .fore10 .ci-left { background: url(../image/icon/server.png) no-repeat 0 -225px }
+#lifeserv .fore10 .cw-icon:hover .ci-left { background: url(../image/icon/server.png) no-repeat -25px -225px }
+#lifeserv .fore11 .ci-left { background: url(../image/icon/server.png) no-repeat 0 -250px }
+#lifeserv .fore11 .cw-icon:hover .ci-left { background: url(../image/icon/server.png) no-repeat -25px -250px }
+#lifeserv .fore12 .ci-left { background: url(../image/icon/server.png) no-repeat 0 -275px }
+#lifeserv .fore12 .cw-icon:hover .ci-left { background: url(../image/icon/server.png) no-repeat -25px -275px }
+#lifeserv .mc-inner { position: absolute; top: 28px; left: 0; width: 250px; height: 180px; background: #fff }
+#lifeserv .mc-inner .close { display: block; position: absolute; right: 0; top: 0; width: 20px; height: 20px; line-height: 20px; text-align: center; cursor: pointer }
+#lifeserv .mc-inner .close:hover { background: #ccc; color: #fff; text-decoration: none }
+#lifeserv .hide iframe { display: none }
+    </style>
+</head>
+
+<body>
+<div class="public">
+    <div id="news" class="m">
+        <div class="mt">
+            <h2>时代公告</h2>
+            <div class="extra"><a target="_blank" href="http://www.jd.com/moreSubject.aspx" clstag="h|keycount|2015|09a">更多 &gt;</a></div>
+        </div>
+        <div class="mc">
+            <ul>
+                <li clstag="h|keycount|2015|09b1"><a target="_blank" href="http://sale.jd.com/act/FaDOetw3RAk.html"><span>[特惠]</span>购自营图书满50加6元得好书</a></li>
+                <li clstag="h|keycount|2015|09b2"><a target="_blank" href="http://www.jd.com/news.aspx?id=24931"><span>[公告]</span>华南华中区域配送延迟</a></li>
+                <li clstag="h|keycount|2015|09b3"><a target="_blank" href="http://mall.jd.com/index-1000001314.html"><span>[特惠]</span>空调劲爆秒杀限量抢</a></li>
+                <li clstag="h|keycount|2015|09b4"><a target="_blank" href="http://www.jd.com/news.aspx?id=24915"><span>[公告]</span>618大促订单部分地区配送延迟</a></li>
+                <li clstag="h|keycount|2015|09b5"><a target="_blank" href="http://sale.jd.com/act/ahXp78ion6T3eMYx.html"><span>[特惠]</span>华南专享5折起 领券再疯抢！</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="lifeserv" class="m">
+        <div class="mt">
+            <h2>生活服务</h2>
+            <div class="extra"></div>
+        </div>
+        <div class="mc">
+        <ul class="">
+            <li class="fore1" data-iframe="http://chongzhi.jd.com/jd-index-ifame.htm" clstag="h|keycount|2015|10b01" data-idx="0">
+                <a class="cw-icon" target="_blank" href="http://chongzhi.jd.com/" style="padding-top: 41px;">
+                    <i class="ci-left" style="background-image: url(http://img11.360buyimg.com/da/jfs/t1282/140/49105694/12550/56b06d64/5547211fN2f79c420.png); top: 13px;"></i><span>话费</span>
+                </a>
+            </li>
+            <li class="fore2" data-iframe="http://jipiao.jd.com/htm/iframeTrip.html" clstag="h|keycount|2015|10b02" data-idx="1">
+                <a class="cw-icon" target="_blank" href="http://jipiao.jd.com/" style="padding-top: 41px;">
+                    <i class="ci-left" style="background-image: url(http://img11.360buyimg.com/da/jfs/t1282/140/49105694/12550/56b06d64/5547211fN2f79c420.png); top: 13px;"></i><span>机票</span>
+                </a>
+            </li>
+            <li class="fore3" data-iframe="http://movie.jd.com/jdmovie.html" clstag="h|keycount|2015|10b03" data-idx="2">
+                <a class="cw-icon" target="_blank" href="http://movie.jd.com/" style="padding-top: 41px;">
+                    <i class="ci-left" style="background-image: url(http://img11.360buyimg.com/da/jfs/t1282/140/49105694/12550/56b06d64/5547211fN2f79c420.png); top: 13px;"></i><span>电影票</span>
+                </a>
+            </li>
+            <li class="fore4" data-iframe="http://card.jd.com/html/card-jdIndex2015.html" clstag="h|keycount|2015|10b04" data-idx="3">
+                <a class="cw-icon" target="_blank" href="http://game.jd.com/" style="padding-top: 41px;">
+                    <i class="ci-left" style="background-image: url(http://img11.360buyimg.com/da/jfs/t1282/140/49105694/12550/56b06d64/5547211fN2f79c420.png); top: 13px;"></i><span>游戏</span>
+                </a>
+            </li>
+            <li class="fore5" clstag="h|keycount|2015|10b05">
+                <a class="cw-icon" target="_blank" href="http://caipiao.jd.com/">
+                    <i class="ci-left" style="background-image: url(http://img11.360buyimg.com/da/jfs/t1282/140/49105694/12550/56b06d64/5547211fN2f79c420.png);_background-image: url(http://img30.360buyimg.com/da/jfs/t1321/66/47996261/7299/4a42d61a/55472133N581446be.png);"></i><span>彩票</span>
+                </a>
+            </li>
+            <li class="fore6" clstag="h|keycount|2015|10b06">
+                <a class="cw-icon" target="_blank" href="http://tuan.jd.com/homevirtual-beijing.html?cpdad=1DLSUE">
+                    <i class="ci-left" style="background-image: url(http://img11.360buyimg.com/da/jfs/t1282/140/49105694/12550/56b06d64/5547211fN2f79c420.png);_background-image: url(http://img30.360buyimg.com/da/jfs/t1321/66/47996261/7299/4a42d61a/55472133N581446be.png);"></i><span>团购</span>
+                </a>
+            </li>
+            <li class="fore7" clstag="h|keycount|2015|10b07">
+                <a class="cw-icon" target="_blank" href="http://hotel.jd.com/">
+                    <i class="ci-left" style="background-image: url(http://img11.360buyimg.com/da/jfs/t1282/140/49105694/12550/56b06d64/5547211fN2f79c420.png);_background-image: url(http://img30.360buyimg.com/da/jfs/t1321/66/47996261/7299/4a42d61a/55472133N581446be.png);"></i><span>酒店</span>
+                </a>
+            </li>
+            <li class="fore8" clstag="h|keycount|2015|10b08">
+                <a class="cw-icon" target="_blank" href="http://jiaofei.jd.com/">
+                    <i class="ci-left" style="background-image: url(http://img11.360buyimg.com/da/jfs/t1282/140/49105694/12550/56b06d64/5547211fN2f79c420.png);_background-image: url(http://img30.360buyimg.com/da/jfs/t1321/66/47996261/7299/4a42d61a/55472133N581446be.png);"></i><span>水电煤</span>
+                </a>
+            </li>
+            <li class="fore11" clstag="h|keycount|2015|10b11">
+                <a class="cw-icon" target="_blank" href="http://z.jd.com/">
+                    <i class="ci-left" style="background-image: url(http://img11.360buyimg.com/da/jfs/t1282/140/49105694/12550/56b06d64/5547211fN2f79c420.png);_background-image: url(http://img30.360buyimg.com/da/jfs/t1321/66/47996261/7299/4a42d61a/55472133N581446be.png);"></i><span>众筹</span>
+                </a>
+            </li>
+            <li class="fore12" clstag="h|keycount|2015|10b12">
+                <a class="cw-icon" target="_blank" href="http://bao.jd.com/">
+                    <i class="ci-left" style="background-image: url(http://img11.360buyimg.com/da/jfs/t1282/140/49105694/12550/56b06d64/5547211fN2f79c420.png);_background-image: url(http://img30.360buyimg.com/da/jfs/t1321/66/47996261/7299/4a42d61a/55472133N581446be.png);"></i><span>保险</span>
+                </a>
+            </li>
+            <li class="fore9" clstag="h|keycount|2015|10b09">
+                <a class="cw-icon" target="_blank" href="http://licai.jd.com/">
+                    <i class="ci-left" style="background-image: url(http://img11.360buyimg.com/da/jfs/t1282/140/49105694/12550/56b06d64/5547211fN2f79c420.png);_background-image: url(http://img30.360buyimg.com/da/jfs/t1321/66/47996261/7299/4a42d61a/55472133N581446be.png);"></i><span>理财</span>
+                </a>
+            </li>
+            <li class="fore10" clstag="h|keycount|2015|10b10">
+                <a class="cw-icon" target="_blank" href="http://baitiao.jd.com/activity/third">
+                    <i class="ci-left" style="background-image: url(http://img11.360buyimg.com/da/jfs/t1282/140/49105694/12550/56b06d64/5547211fN2f79c420.png);_background-image: url(http://img30.360buyimg.com/da/jfs/t1321/66/47996261/7299/4a42d61a/55472133N581446be.png);"></i><span>白条</span>
+                </a>
+            </li>
+        </ul>
+        <div class="mc-inner hide" style="top: 208px;">
+            <a class="close">×</a>
+            <div class="hide" data-idx="0"><a class="close" clstag="h|keycount|2015|10b02x">×</a><iframe width="250" height="185" frameborder="0" scrolling="no" src="http://chongzhi.jd.com/jd-index-ifame.htm"></iframe></div>
+            <div class="hide" data-idx="1"><a class="close" clstag="h|keycount|2015|10b01x">×</a><iframe width="250" height="185" frameborder="0" scrolling="no" src="http://jipiao.jd.com/htm/iframeTrip.html"></iframe></div>
+            <div class="hide" data-idx="2"></div>
+            <div class="hide" data-idx="3"></div>
+        </div>
+    </div>
+    </div>
+</div>
+
+</body>
+
+</html>

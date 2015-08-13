@@ -1,0 +1,162 @@
+@charset "UTF-8";
+/**
+ *
+ * @authors Your Name (you@example.org)
+ * @date    2015-05-13 23:48:06
+ * @version $Id$
+ */
+
+/*通用页头，作用于未登陆时页头样式*/
+/*页头（操作区）*/
+/*注册登陆页面页头*/
+body{background: #FCFAFD;}
+.unLoginWrap{height:auto;min-width:768px;width:100%;background: #FCFAFD;}
+.register_wrap {color:#404040;font:12px/18px "\5b8b\4f53",Arial,Helvetica,sans-serif;}
+.register_wrap a {color:#1a66b3;text-decoration:none;}
+.register_wrap a:hover{text-decoration:underline;color:#FF3228;}
+.register_content{ width:960px;margin:0 auto;padding-top:2px;height:71px;color:#404040;}
+
+.register_operate {float:right;display:inline;width:788px;height:21px;}
+.register_operate p{float:right;display:inline;padding:10px 0px 0 0;width:450px;height:19px;overflow:hidden;white-space:nowrap;text-align:right;font:14px/20px "Microsoft YaHei";}
+.register_operate p a:hover { color:#FF3228;}
+.register_operate a.login_link, .register_operate a.login_link:hover {color:#FF3228;}
+
+/*左边logo*/
+.register_content .register_logo{ float:left;display:inline;width:268px; height:60px;overflow:hidden;}
+.register_content .register_logo a {display:block;width:268px; height:60px;overflow:hidden;}
+.registerhead_bottom {margin:0 auto;width:992px;height:2px;background:#FF3228;line-height:0;font-size:0;overflow:hidden;/*box-shadow: 2px 2px 3px 1px #FF3228;*/}
+.banner{width: 960px;}
+.bannerHeader{background-position:0 -452px;}
+.bannerHeader{width:445px;height:28px;background-position:0 -452px;margin-top:25px;}
+.sprite{background-image:url(../image/sprite.png?${buildtimestamp});background-repeat:no-repeat;}
+/*------------------------------------------------------1-----------------------------------------------------------*/
+/*注册页面的主体*/
+.registerMian{width: 990px;margin:20px auto;}
+.registerMian form input{font-family:"microsoft yahei","宋体";font-size:14px;}
+.btn_go_buy{background:url("../image/register_bg.png") repeat scroll 0 0 rgba(0,0,0,0);border:1px solid #c3c3c3;border-radius:3px;color:#666;display:inline-block;height:19px;line-height:19px;margin:-3px 16px 0;padding:0 6px;vertical-align:middle;}
+.btn_go_buy:hover{color:#1a66b3;text-decoration:none;}
+.register_box .c_9c{color:#9c9c9c;}
+.register_box .c_9c:hover{color:#1a66b3;}
+.register_box{ border:1px solid #e9e9e9;margin-bottom:16px;border-radius: 12px;box-shadow: 0 5px 7px 5px #F8F8F8;background: url("../image/register_bg.jpg") no-repeat 570px 200px scroll  rgba(253,253,253,0.3);}
+.register_box .head{background-position:0 0;border-bottom:1px solid #eaeaea;height:37px;line-height:37px;padding-right:10px;}
+.register_box .head h3{font-family:"Microsoft YaHei";font-size:18px;font-weight:normal;padding-left:18px;}
+.register_box .head .more{color:#666;float:right;}
+.register_box .head .coupon_words{float:right;margin-right:500px;}
+.register_box .head .more:hover{color:#f60;}
+.register_box .body{padding:25px 0 0;position:relative;}
+.register_box table td{padding:10px 0;position:relative;}
+.register_box .z_index2{z-index:2;}
+.register_box table{color:#9e9e9e;}
+.register_box table .t{color:#404040;font-family:"Microsoft YaHei";font-size:16px;padding-right:10px;padding-top:15px;text-align:right;vertical-align:top;width:275px;}
+.register_box .text{border:1px solid #7f9db9;float:left;height:18px;line-height:18px;margin-right:10px;outline:0 none;padding:7px 10px;width:216px;}
+.register_box .cue,.register_box .prompt{background:none repeat scroll 0 0 #fef2f2;border:1px solid #ffb8b8;color:#f40000;display:inline-block;float:left;line-height:32px;margin-right:5px;padding:0 4px;}
+.register_box .cue .icon,.register_box .prompt .icon{background-position:-215px -208px;display:inline-block;float:left;height:17px;margin:7px 4px 0 0;width:17px;}
+.register_box .cue .show_pass{background:url("../image/register_btn.png") no-repeat scroll 0 bottom rgba(0,0,0,0);color:#666;display:inline-block;height:18px;line-height:18px;margin-left:6px;margin-right:3px;text-align:center;width:57px;}
+.register_box .cue .show_pass:hover{background-position:-82px bottom;color:#1a66b3;text-decoration:none;}
+.register_box .prompt{background-color:#fff;border-color:#fdb98b;color:#fc8433;}
+.register_box .prompt .icon{background-position:-189px -208px;}
+.register_box .icon_yes{background-position:-164px -208px;display:inline-block;height:17px;margin:8px 0 0;width:17px;}
+.register_box .little_cue{float:none;height:23px;line-height:23px;}
+.register_box .little_cue .icon{margin:3px 4px 0 0;}
+.register_box .warn{float:left;line-height:33px;}
+.register_box .cue{float:left;}
+.register_box .v{border:1px solid #e2e2e2;margin-right:4px;margin-top:5px;vertical-align:middle;}
+.register_box .v_box{clear:both;display:block;height:86px;padding-top:10px;}
+.register_box .btn_login{background:#FF3328 0 -37px;border:0 none;cursor:pointer;display:inline-block;height:36px;width:240px;color:#FFF;font:18px/36px "Microsoft YaHei";}
+.register_box td .hover,.register_box .btn_login:hover{background-position:0 -74px;}
+.register_box .clause{color:#404040;padding:4px 0 35px;}
+.register_box .clause input{margin:-4px 8px 0 0;vertical-align:middle;}
+.register_box .d_text{display:inline-block;line-height:16px;width:472px;}
+.register_box .clause .float_l{float:left;}
+.register_box .clause a{color:#666;}
+.register_box .clause a:hover{color:#f60;}
+.register_box .clause .cue{line-height:24px;width:280px;}
+.register_box .clause .cue .icon{margin-bottom:20px;}
+.register_box .wrong{border-color:#ff4646;}
+.register_box .warn_p{display:block;float:left;line-height:12px;margin-top:10px;}
+.register_box .msg_level{display:inline-block;margin:0 15px 0 0;overflow:hidden;position:relative;top:-1px;vertical-align:middle;width:130px;}
+.register_box .msg_level span{background-color:#b9b9b9;color:#fff;display:inline-block;height:14px;line-height:14px;margin-left:1px;text-align:center;width:42px;}
+.register_box .msg_level .s1{background-color:#ffc6a0;}
+.register_box .msg_level .s2{background-color:#ffa568;}
+.register_box .msg_level .s3{background-color:#ff8e42;}
+.email_select{background-color:#fff;border:1px solid #c8c8c8;left:0;overflow:hidden;position:absolute;top:44px;width:236px;z-index:2;}
+@-moz-document url-prefix(""){.email_select{left:0;top:39px;}
+}
+.email_select li{color:#666;display:block;font-family:"Microsoft YaHei";font-size:12px;height:24px;line-height:24px;overflow:hidden;padding-left:10px;}
+.email_select .hover_domain{background-color:#f0f0f0;cursor:pointer;text-decoration:none;}
+.email_change{padding-top:22px;}
+.email_change .dd_bottom{margin-bottom:10px;}
+.success_box{padding:44px 0 50px;}
+.success_box .icon_yes_b{background-position:-201px -233px;display:inline-block;height:52px;margin:8px 32px 0 0;vertical-align:middle;width:32px;}
+.success_box .text_box{clear:both;display:block;}
+.success_box p{display:block;margin-left:180px;}
+.success_box p .f20{font-family:"Microsoft YaHei";font-size:20px;}
+.success_box .text_box{color:#666;height:38px;padding:4px 0 0 64px;}
+.success_box .icon_yes{background-position:-164px -208px;display:inline-block;height:17px;margin:0 8px -4px 4px;width:17px;}
+.success_box .text_box b.red{color:#c30;}
+.success_box .btn_time{background:none repeat scroll 0 0 #eee;border:1px solid #c3c3c3;border-radius:3px;color:#9e9e9e;display:inline-block;height:19px;line-height:19px;margin:0 8px;padding:0 10px;}
+.success_box .text_box b{color:#404040;font-family:Arial;font-size:14px;}
+.success_box .text_box2{color:#666;height:24px;line-height:24px;padding:0 0 0 64px;}
+.success_box p a.btn_go_buy{display:inline-block;margin-top:-9px;vertical-align:middle;}
+.success_box .send_begin{color:#1a66b3;font-weight:bold;margin-right:10px;}
+.success_box .send_begin:hover{color:#1a66b3;}
+.register_box .tools_box{background:none repeat scroll 0 0 #fffeed;border-top:1px solid #e9e9e9;bottom:0;color:#666;left:0;padding-bottom:30px;position:absolute;text-align:center;width:100%;}
+.register_box .tools_box p{padding:24px 0;}
+.register_box .icon{display:inline-block;height:50px;margin-right:11px;vertical-align:middle;width:48px;}
+.register_box .btn_link{display:inline-block;height:36px;margin-top:4px;vertical-align:middle;width:124px;}
+.register_box .mail .icon{background-position:0 -418px;}
+.register_box .mail .btn_link{background-position:0 -129px;margin-right:70px;width:146px;}
+.register_box .mail .btn_link:hover{background-position:0 -165px;}
+.register_box .phone .icon{background-position:-59px -418px;width:25px;}
+.register_box .phone .btn_link{background-position:0 -201px;margin-right:70px;width:146px;}
+.register_box .phone .btn_link:hover{background-position:0 -237px;}
+.register_box .info .icon{background-position:-104px -418px;width:32px;}
+.register_box .info .btn_link{background-position:0 -309px;width:160px;}
+.register_box .info .btn_link:hover{background-position:0 -273px;}
+.register_box .login_eamil{background-position:0 -210px;display:inline-block;height:28px;left:0;line-height:28px;position:relative;text-align:center;top:10px;width:76px;}
+.register_box .login_eamil:hover{background-position:-81px -210px;}
+.register_box .c_yellow{color:#ff8f20;font-family:"微软雅黑";font-size:16px;}
+.register_box .m_coupon{color:#9e9e9e;left:285px;overflow:hidden;position:absolute;top:72px;}
+.register_box .c_yellow2{color:#fa831a;font:bold 14px/36px "宋体";}
+.register_box .c_yellow2 b{color:#c30;padding:0 3px;}
+.register_box .c_bold{color:#3f3f3f;font:bold 14px/20px "宋体";height:20px;}
+.register_box .c_link2{font:12px/20px "宋体";height:20px;}
+.register_box .c_link1{font:12px/36px "宋体";margin-left:12px;}
+.register_box .ml722{margin-left:722px;}
+.register_box .ml603{margin-left:603px;}
+.register_box .line{background:none repeat scroll 0 0 #e9e9e9;font-size:0;height:1px;margin:7px 122px 12px 148px;overflow:hidden;width:705px;}
+/*注册信息反馈：*/
+.backcontent{width:560px;height:60px;margin:0px auto;border:1px solid #FFF;border-radius:5px;text-align:left;padding-top:10px}
+.backcontent p{font:200 14px "微软雅黑"}
+/*.register_pop{background:none repeat scroll 0 0 #fff;border:1px solid #dcdddd;left:50%;margin-left:-189px;margin-top:-110px;position:absolute;top:50%;width:398px;z-index:1001;}
+.register_pop .head{background-position:0 -19px;border-bottom:1px solid #dcdddd;height:34px;line-height:34px;padding-left:10px;}
+.register_pop .head h3{color:#666;font-size:14px;}
+.register_pop .body{padding:18px 0;}
+.register_pop .close{background-position:0 -401px;border:1px solid #dcdddd;cursor:pointer;height:17px;position:absolute;right:7px;top:7px;width:17px;}
+.register_pop .hover{background-position:-17px -401px;}
+.register_pop dl{line-height:24px;}
+.register_pop dt{float:left;font-family:"Microsoft YaHei";font-size:14px;text-align:right;width:100px;}
+.register_pop dd{float:left;padding-left:4px;width:270px;}
+.register_pop dd b{display:inline-block;font-size:14px;padding-top:2px;}
+.register_pop dd .text{border:1px solid #7f9db9;height:24px;line-height:24px;margin-right:4px;padding:0 4px;vertical-align:middle;width:170px;}
+.register_pop dd p{color:#9e9e9e;padding:2px 0;}
+.register_pop dd p span{display:inline-block;}
+.register_pop dd .btn_enter{background-position:0 -373px;cursor:pointer;display:block;height:28px;margin-top:8px;width:75px;}
+.register_pop dd .hover{background-position:0 -345px;}
+.register_pop .btn_time{background:none repeat scroll 0 0 #eee;border:1px solid #c3c3c3;border-radius:3px;color:#9e9e9e;display:inline-block;height:19px;line-height:19px;margin:0 16px;padding:0 10px;}
+.register_pop .v_box{padding:6px 0 4px;white-space:nowrap;}
+.register_pop .gray{color:#9e9e9e;}
+.register_pop .hint{height:24px;}
+.register_pop .cue{background:none repeat scroll 0 0 #fef2f2;border:1px solid #ffb8b8;border-radius:3px;color:#f40000;display:inline-block;float:left;line-height:24px;margin-right:5px;padding:0 4px;}
+.register_pop .cue .icon{background-position:-34px -401px;display:inline-block;float:left;height:17px;margin:3px 4px 0 0;width:17px;}
+.register_pop .icon_yes{background-position:-51px -401px;display:inline-block;height:17px;margin:5px 0 0;width:17px;}
+.register_pop .icon_yes{margin-top:0;vertical-align:middle;}
+.register_pop .cue{clear:both;display:inline-block;float:none;height:24px;margin:4px 0;}
+.register_pop .v{border:1px solid #e2e2e2;margin-right:4px;vertical-align:middle;}
+.register_pop .v_box{clear:both;display:block;padding-top:10px;}
+.register_pop .body .wrong{border-color:#ff4646;}
+.about_box{line-height:25px;padding:10px 20px;}
+.about_box a{margin-right:20px;}
+.mask{background:none repeat scroll 0 0 #000;height:100%;left:0;opacity:0.6;position:absolute;top:0;width:100%;z-index:1000;}
+.register_box .c_yellow3{font-size:12px;}
+.success_box .text_box2 b{color:#c30;}*/
