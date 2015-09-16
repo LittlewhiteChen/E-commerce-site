@@ -419,7 +419,7 @@ a{color:#666;text-decoration:none;}
 .infoCont .seller .sellerLink:hover{text-decoration:underline;color:#ff2832;}
 
 /* 分页模块 */
-.page{overflow:hidden;width:900px;height:27px;padding:13px 16px 0;}
+.page{overflow:hidden;width:900px;height:27px;padding:13px 16px 25px;}
 .pageList{font:400 14px/25px '微软雅黑';text-align:center;}
 .pageList a{display:inline-block;height:25px;margin:0 2px;padding:0 10px;line-height:25px;color:#ff2832;border:1px solid #cacaca;border-radius:2px;}
 .pageList a:hover{color:#fff;border-color:#ff3365;background:#ff3365;}
